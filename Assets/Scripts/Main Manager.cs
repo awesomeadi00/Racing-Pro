@@ -7,8 +7,9 @@ public class MainManager : MonoBehaviour
     public static MainManager Instance;
 
     //Variables to pass through the menu scene: 
-    public float carType;
-    public float circuitType;
+    public int carType;
+    public int circuitType;
+    public bool unlockSpecial;
 
     void Awake(){
         if(Instance != null) {

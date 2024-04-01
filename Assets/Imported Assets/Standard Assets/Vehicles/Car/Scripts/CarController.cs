@@ -363,5 +363,40 @@ namespace UnityStandardAssets.Vehicles.Car
             }
             return false;
         }
+
+        // Additional helper function added to configure the car depending on which one it is. 
+        public void ConfigureCar(int carType)
+        {
+            switch (carType)
+            {
+                case 1: // Configuration for red car
+                    m_MaximumSteerAngle = 30;
+                    m_FullTorqueOverAllWheels = 1500;
+                    m_SteerHelper = 0.8f;
+                    m_TractionControl = 0.5f;
+                    m_Downforce = 120f;
+                    break;
+
+                case 2: // Configuration for blue car
+                    m_MaximumSteerAngle = 25;
+                    m_FullTorqueOverAllWheels = 2000;
+                    m_SteerHelper = 0.5f;
+                    m_TractionControl = 0.3f;
+                    m_Downforce = 100f;
+                    break;
+                
+                case 3:
+                    m_MaximumSteerAngle = 50;
+                    m_FullTorqueOverAllWheels = 4000;
+                    m_SteerHelper = 1.0f;
+                    m_TractionControl = 1.0f;
+                    m_Downforce = 100f;
+                    break;
+
+                default:
+                    break;
+            }
+        }
+
     }
 }
