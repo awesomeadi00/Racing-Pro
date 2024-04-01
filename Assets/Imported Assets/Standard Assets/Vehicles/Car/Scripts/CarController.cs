@@ -371,26 +371,27 @@ namespace UnityStandardAssets.Vehicles.Car
             {
                 case 1: // Configuration for red car
                     m_MaximumSteerAngle = 30;
+                    m_ReverseTorque = 500;
                     m_FullTorqueOverAllWheels = 1500;
-                    m_SteerHelper = 0.8f;
-                    m_TractionControl = 0.5f;
-                    m_Downforce = 120f;
+                    m_SteerHelper = 0.5f;
+                    m_CarDriveType = CarDriveType.FrontWheelDrive;
+                    m_Topspeed = 150;
                     break;
 
                 case 2: // Configuration for blue car
-                    m_MaximumSteerAngle = 25;
-                    m_FullTorqueOverAllWheels = 2000;
-                    m_SteerHelper = 0.5f;
-                    m_TractionControl = 0.3f;
-                    m_Downforce = 100f;
+                    m_MaximumSteerAngle = 30;
+                    m_FullTorqueOverAllWheels = 2500;
+                    m_SteerHelper = 0.7f;
+                    m_CarDriveType = CarDriveType.RearWheelDrive;
+                    m_Topspeed = 175;
                     break;
                 
                 case 3:
-                    m_MaximumSteerAngle = 50;
+                    m_MaximumSteerAngle = 40;
                     m_FullTorqueOverAllWheels = 4000;
-                    m_SteerHelper = 1.0f;
-                    m_TractionControl = 1.0f;
-                    m_Downforce = 100f;
+                    m_SteerHelper = 0.85f;
+                    m_CarDriveType = CarDriveType.FourWheelDrive;
+                    m_Topspeed = 200;
                     break;
 
                 default:

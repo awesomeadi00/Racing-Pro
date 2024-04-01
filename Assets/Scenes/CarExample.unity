@@ -34918,13 +34918,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc56dbf9acee2c246883c469fb44a18f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSteeringAngle: 25
-  maxMotorTorque: 2500
-  maxBrakeTorque: 500
-  leftWheel: {fileID: 1598860263}
-  rightWheel: {fileID: 1291023774}
-  visualLeftWheel: {fileID: 1921334331}
-  visualRightWheel: {fileID: 1153321377}
 --- !u!43 &1057323921
 Mesh:
   m_ObjectHideFlags: 0
@@ -35090,12 +35083,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &1153321377 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100018, guid: 0e7ee4df08df88c4880f43398f9ad2c2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1388413041}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1162268961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35212,12 +35199,6 @@ MonoBehaviour:
   markerStartUVY: 0.7687073
   customPoints: []
   handleObject: {fileID: 0}
---- !u!146 &1291023774 stripped
-WheelCollider:
-  m_CorrespondingSourceObject: {fileID: 14600006, guid: 0e7ee4df08df88c4880f43398f9ad2c2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1388413041}
-  m_PrefabAsset: {fileID: 0}
 --- !u!28 &1307358571
 Texture2D:
   m_ObjectHideFlags: 0
@@ -35386,9 +35367,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5400000, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 3}
+      propertyPath: m_Mass
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 3}
+      propertyPath: m_Downforce
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 3}
+      propertyPath: m_SteerHelper
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 3}
+      propertyPath: m_TractionControl
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 3}
+      propertyPath: m_FullTorqueOverAllWheels
+      value: 2500
       objectReference: {fileID: 0}
     - target: {fileID: 11400022, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 3}
       propertyPath: m_Enabled
@@ -35721,12 +35722,6 @@ Texture2D:
     offset: 0
     size: 0
     path: 
---- !u!146 &1598860263 stripped
-WheelCollider:
-  m_CorrespondingSourceObject: {fileID: 14600000, guid: 0e7ee4df08df88c4880f43398f9ad2c2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1388413041}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1629981051
 GameObject:
   m_ObjectHideFlags: 0
@@ -36890,12 +36885,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 694987946}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1921334331 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100050, guid: 0e7ee4df08df88c4880f43398f9ad2c2,
-    type: 3}
-  m_PrefabInstance: {fileID: 1388413041}
-  m_PrefabAsset: {fileID: 0}
 --- !u!43 &1964473526
 Mesh:
   m_ObjectHideFlags: 0
