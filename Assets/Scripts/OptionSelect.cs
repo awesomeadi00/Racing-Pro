@@ -53,6 +53,12 @@ public class OptionSelect : MonoBehaviour
     }
 
     public void BeginGame() {
-        SceneManager.LoadScene(1);
+        if(MainManager.Instance.circuitType == 1) {
+            SceneManager.LoadScene(1);
+        }
+
+        else {
+            SceneManager.LoadScene(2);
+        }
     }
 }
