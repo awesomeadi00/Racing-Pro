@@ -9,14 +9,16 @@ public class PauseScreen : MonoBehaviour
     [SerializeField] private GameObject pausedScreen;
     private bool paused = false;
     private HUDManager hudHelper;
+    private InitialCountDown countDown;
 
     private void Start() {
         hudHelper = GameObject.FindObjectOfType<HUDManager>();
+        countDown = gameObject.GetComponent<InitialCountDown>();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P) && !hudHelper.raceFinish)
+        if (Input.GetKeyDown(KeyCode.P) && !hudHelper.raceFinish && countDown.countDownComplete)
         {
             PauseGame();
         }
@@ -52,6 +54,7 @@ public class PauseScreen : MonoBehaviour
     //This function will simply reload the entire previous Active Scene from the beginning. 
     public void RestartGame()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

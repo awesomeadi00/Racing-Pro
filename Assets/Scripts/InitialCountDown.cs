@@ -12,10 +12,12 @@ public class InitialCountDown : MonoBehaviour
     public HUDManager hudManager;
     private AudioSource countdownAudioSource;
     public AudioClip countDownClip;
+    public bool countDownComplete;
 
     // Start is called before the first frame update
     void Start()
     {
+        countDownComplete = false;
         countdownAudioSource = GetComponent<AudioSource>();
         StartCoroutine(CountdownStart());
     }
@@ -40,5 +42,6 @@ public class InitialCountDown : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
         countDownDisplayText.gameObject.SetActive(false);
+        countDownComplete = true;
     }
 }
