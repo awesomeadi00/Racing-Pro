@@ -52,11 +52,11 @@ public class RaceFinishStats : MonoBehaviour
 
     string CalculateRating(float totalTime)
     {
-        if (totalTime <= 180) return "5/5";
-        if (totalTime <= 210) return "4/5";
-        if (totalTime <= 240) return "3/5";
-        if (totalTime <= 270) return "2/5";
-        if (totalTime <= 300) return "1/5";
+        if (totalTime <= 240) return "5/5";
+        if (totalTime <= 270) return "4/5";
+        if (totalTime <= 300) return "3/5";
+        if (totalTime <= 330) return "2/5";
+        if (totalTime <= 360) return "1/5";
         return "0/5";
     }
 }
