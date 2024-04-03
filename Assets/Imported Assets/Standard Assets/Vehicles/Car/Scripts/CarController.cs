@@ -374,7 +374,7 @@ namespace UnityStandardAssets.Vehicles.Car
                     m_ReverseTorque = 150;
                     m_FullTorqueOverAllWheels = 40000;
                     m_SteerHelper = 0.5f;
-                    m_TractionControl = 0.5f;
+                    m_TractionControl = 0.25f;
                     m_CarDriveType = CarDriveType.FrontWheelDrive;
                     m_Topspeed = 150;
                     break;
@@ -384,7 +384,7 @@ namespace UnityStandardAssets.Vehicles.Car
                     m_ReverseTorque = 150;
                     m_FullTorqueOverAllWheels = 45000;
                     m_SteerHelper = 0.7f;
-                    m_TractionControl = 0.35f;
+                    m_TractionControl = 0.3f;
                     m_CarDriveType = CarDriveType.RearWheelDrive;
                     m_Topspeed = 175;
                     break;
@@ -394,7 +394,7 @@ namespace UnityStandardAssets.Vehicles.Car
                     m_ReverseTorque = 150;
                     m_FullTorqueOverAllWheels = 55000;
                     m_SteerHelper = 0.85f;
-                    m_TractionControl = 0.2f;
+                    m_TractionControl = 0.4f;
                     m_CarDriveType = CarDriveType.FourWheelDrive;
                     m_Topspeed = 200;
                     break;
