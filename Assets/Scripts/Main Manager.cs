@@ -12,9 +12,12 @@ public class MainManager : MonoBehaviour
     public bool unlockSpecial;
 
     void Awake(){
-        if(Instance != null) {
-            Destroy(gameObject);
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject); 
+            return; 
         }
+
         carType = 1;
         circuitType = 1;
         unlockSpecial = false;

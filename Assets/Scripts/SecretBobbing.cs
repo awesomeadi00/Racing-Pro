@@ -18,6 +18,11 @@ public class SecretBobbing : MonoBehaviour
         startingPosition = transform.position;
         capsuleAudioSource = GetComponent<AudioSource>();
 
+        // Deactivate this GameObject if unlockSpecial is already true
+        if (MainManager.Instance != null && MainManager.Instance.unlockSpecial)
+        {
+            gameObject.SetActive(false);
+        }
     }
 
     void Update()

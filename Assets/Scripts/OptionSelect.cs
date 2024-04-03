@@ -12,6 +12,14 @@ public class OptionSelect : MonoBehaviour
     [SerializeField] private GameObject beginButton;
     [SerializeField] private GameObject unlockText;
 
+    private void OnEnable()
+    {
+        if (MainManager.Instance != null)
+        {
+            unlockText.SetActive(!MainManager.Instance.unlockSpecial);
+        }
+    }
+
     public void RedCar() {
         MainManager.Instance.carType = 1;
         circuitSection.SetActive(true);
@@ -23,7 +31,9 @@ public class OptionSelect : MonoBehaviour
     }
 
     public void SpecialCar() {
-        if(MainManager.Instance.unlockSpecial) {
+        Debug.Log("Unlock Special is: " + MainManager.Instance.unlockSpecial);
+
+        if (MainManager.Instance.unlockSpecial) {
             MainManager.Instance.carType = 3;
             unlockText.SetActive(false);
             circuitSection.SetActive(true);
