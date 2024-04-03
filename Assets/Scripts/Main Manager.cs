@@ -15,6 +15,9 @@ public class MainManager : MonoBehaviour
         if(Instance != null) {
             Destroy(gameObject);
         }
+        carType = 1;
+        circuitType = 1;
+        unlockSpecial = false;
 
         Instance = this;
         DontDestroyOnLoad(gameObject);

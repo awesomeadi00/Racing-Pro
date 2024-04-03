@@ -8,17 +8,9 @@ using System.Runtime.CompilerServices;
 
 public class OptionSelect : MonoBehaviour
 {
-    private int carType;
-    private int circuitType;
     [SerializeField] private GameObject circuitSection;
     [SerializeField] private GameObject beginButton;
     [SerializeField] private GameObject unlockText;
-    private Button specialCarButton;
-    private bool unlockSpecial = false;
-
-    private void Start() {
-        specialCarButton = beginButton.GetComponent<Button>();
-    }
 
     public void RedCar() {
         MainManager.Instance.carType = 1;
@@ -32,7 +24,8 @@ public class OptionSelect : MonoBehaviour
 
     public void SpecialCar() {
         if(MainManager.Instance.unlockSpecial) {
-            MainManager.Instance.carType = 2;
+            MainManager.Instance.carType = 3;
+            unlockText.SetActive(false);
             circuitSection.SetActive(true);
         }
 
