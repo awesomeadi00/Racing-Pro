@@ -377,7 +377,7 @@ RectTransform:
   m_GameObject: {fileID: 201799242}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 18.054485, y: 8.699699, z: 8.699699}
+  m_LocalScale: {x: 21.4054, y: 10.314364, z: 10.314364}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1756559646}
@@ -2211,10 +2211,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "How to Play:\n\n- Press WASD to Control the Car\n\n- You must complete
-    three laps of a circuit as fast as possible!\n\n- You can take shortcuts! However,
-    there are no protection \n   borders on the roads so be careful!\n\n- If you
-    wish to pause the game to restart or return to main menu\n  press 'P'. "
+  m_text: 'How to Play:
+
+
+    - Press WASD to Control the Car
+
+
+    - You must complete
+    three laps of a circuit as fast as possible!
+
+
+    - If you wish to pause the
+    game to restart or return to main menu press ''P''. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -2241,8 +2249,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 5
-  m_fontSizeBase: 5
+  m_fontSize: 5.7
+  m_fontSizeBase: 5.7
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3676,12 +3684,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -4257,7 +4265,7 @@ RectTransform:
   m_GameObject: {fileID: 1896459918}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 17.245918, y: 8.5123, z: 8.5123}
+  m_LocalScale: {x: 21.9713, y: 10.84467, z: 10.84467}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1286190568}
@@ -4375,7 +4383,7 @@ RectTransform:
   m_GameObject: {fileID: 2014064002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.3889, y: 1.3889, z: 1.3889}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1719870099}
@@ -4386,7 +4394,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -46}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2035183059
@@ -4550,7 +4558,7 @@ RectTransform:
   m_GameObject: {fileID: 2053052231}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 17.245918, y: 8.5123, z: 8.5123}
+  m_LocalScale: {x: 21.666046, y: 10.694002, z: 10.694002}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1253134749}

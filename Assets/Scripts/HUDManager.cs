@@ -8,6 +8,7 @@ public class HUDManager : MonoBehaviour
     public int currentlapNumber = 0;
     public bool raceFinish = false;
     private bool lapCompleted = false;
+    private bool raceStarted = false;
 
     private float lapStartTime;
     private float raceStartTime;
@@ -35,18 +36,23 @@ public class HUDManager : MonoBehaviour
         raceMinuteText.text = "00";
         raceSecondText.text = "00";
         raceMillisecondText.text = "00";
-
-        raceStartTime = Time.time;
-        lapStartTime = Time.time;
     }
 
     void Update()
     {
-        if (!raceFinish && !lapCompleted)
+        if (!raceFinish && !lapCompleted && raceStarted)
         {
             UpdateTimer(Time.time - lapStartTime, lapMinuteText, lapSecondText, lapMillisecondText, true);
             UpdateTimer(Time.time - raceStartTime, raceMinuteText, raceSecondText, raceMillisecondText, false);
         }
+    }
+
+    public void StartRace()
+    {
+        raceStartTime = Time.time;
+        lapStartTime = Time.time;
+        raceFinish = false; 
+        raceStarted = true;
     }
 
     private void UpdateTimer(float elapsedTime, TextMeshProUGUI minuteText, TextMeshProUGUI secondText, TextMeshProUGUI millisecondText, bool isLapTimer)
