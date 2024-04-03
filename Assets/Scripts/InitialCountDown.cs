@@ -18,14 +18,10 @@ public class InitialCountDown : MonoBehaviour
     {
         countdownAudioSource = GetComponent<AudioSource>();
         StartCoroutine(CountdownStart());
-
-        if (carController != null)
-        {
-            carController.enabled = false;
-        }
     }
 
     IEnumerator CountdownStart() {
+        carController.enabled = false;
         countdownAudioSource.PlayOneShot(countDownClip);
 
         while(countDownTime > 0) {
